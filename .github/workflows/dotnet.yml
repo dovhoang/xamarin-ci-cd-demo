@@ -25,9 +25,9 @@
 #       run: msbuild DemoCICD/DemoCICD.csproj /t:PackageForAndroid /p:Configuration=Debug
 
 
-name: Build
+name: Build Apk
 
-on: workflow_dispatch
+on: [push]
 
 jobs:
   Android:
