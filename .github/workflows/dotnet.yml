@@ -31,7 +31,7 @@ on: [push]
 
 jobs:
   Android:
-    name: Android
+    name: Build APK
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
@@ -43,7 +43,17 @@ jobs:
           signing_key_alias: hoang
           signing_key_password: 123123
           configuration: "Release"
-      - uses: actions/upload-artifact@v2
-        with:
-          name: ipa
-          path: DemoCICD/bin/Release/**Signed.apk
+      # - uses: actions/upload-artifact@v2
+      #   with:
+      #     name: release
+      #     path: DemoCICD/bin/Release/**Signed.apk  
+
+    name: Upload artefact to App Center
+      uses: wzieba/AppCenter-Github-Action@v1
+      with:
+        appName: hoang-floatingcube.com/DemoCICD
+        token: ff2a971c-d058-459e-8bf9-8ab8196e0ec1
+        group: Testers
+        file: DemoCICD/bin/Release/**Signed.apk
+        notifyTesters: true
+        debug: false        
