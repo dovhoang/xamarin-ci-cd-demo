@@ -38,10 +38,10 @@ jobs:
       - uses: bradyjoslin/xamarinandroid-signedbuild-action@v1
         with:
           csproj_path: DemoCICD/DemoCICD.csproj
-          signing_keystore: DemoCICD/epos.keystore
-          keystore_password: Epos1234
-          signing_key_alias: epos
-          signing_key_password: Epos1234
+          signing_keystore: ${{ secrets.KEYSTORE }}
+          keystore_password: ${{ secrets.KEYSTORE_PASS }}
+          signing_key_alias: ${{ secrets.KEY_ALIAS }}
+          signing_key_password: ${{ secrets.KEY_PASS }}
           configuration: "Release"
       - uses: actions/upload-artifact@v2
         with:
