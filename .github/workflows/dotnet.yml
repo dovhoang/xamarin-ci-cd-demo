@@ -47,13 +47,12 @@ jobs:
       #   with:
       #     name: release
       #     path: DemoCICD/bin/Release/**Signed.apk  
-
-    name: Upload artefact to App Center
-      uses: wzieba/AppCenter-Github-Action@v1
-      with:
-        appName: hoang-floatingcube.com/DemoCICD
-        token: ff2a971c-d058-459e-8bf9-8ab8196e0ec1
-        group: Testers
-        file: DemoCICD/bin/Release/**Signed.apk
-        notifyTesters: true
-        debug: false        
+      - uses: wzieba/AppCenter-Github-Action@v1
+        with:
+          appName: hoang-floatingcube.com/DemoCICD
+          token: ff2a971c-d058-459e-8bf9-8ab8196e0ec1
+          group: Testers
+          file: DemoCICD/bin/Release/**Signed.apk
+          notifyTesters: true
+          debug: false
+         
