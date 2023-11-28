@@ -44,6 +44,7 @@ jobs:
           signing_key_password: 123123
           configuration: "Release"
   DeployAppCenter:
+    needs: BuildAPK
     name: Deploy App Center
     runs-on: ubuntu-latest
     steps:
