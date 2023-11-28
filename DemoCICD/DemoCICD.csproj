@@ -48,11 +48,6 @@
         <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
         <AndroidLinkMode>SdkOnly</AndroidLinkMode>
         <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
-        <AndroidKeyStore>true</AndroidKeyStore>
-        <AndroidSigningKeyStore>epos.keystore</AndroidSigningKeyStore>
-        <AndroidSigningStorePass>Epos1234</AndroidSigningStorePass>
-        <AndroidSigningKeyAlias>epos</AndroidSigningKeyAlias>
-        <AndroidSigningKeyPass>Epos1234</AndroidSigningKeyPass>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System" />

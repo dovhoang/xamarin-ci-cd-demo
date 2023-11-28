@@ -46,4 +46,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: ipa
-          path: DemoCICD/bin/Android/Release/AndroidReleaseSigned.apk
+          path: bin/Release/DemoCICD.DemoCICD-Signed.apk
