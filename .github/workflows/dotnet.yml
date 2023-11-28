@@ -46,7 +46,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: release-apk
-          path: DemoCICD/bin/Release/**Signed.apk   
+          path: DemoCICD/bin/Release/DemoCICD.DemoCICD-Signed.apk   
   DeployAppCenter:
     needs: BuildAPK
     name: Deploy App Center
@@ -62,6 +62,6 @@ jobs:
           appName: hoang-floatingcube.com/DemoCICD
           token: ff2a971c-d058-459e-8bf9-8ab8196e0ec1
           group: Testers
-          file: DemoCICD/bin/Release/**Signed.apk
+          file: DemoCICD/bin/Release/DemoCICD.DemoCICD-Signed.apk
           notifyTesters: true
           debug: false     
