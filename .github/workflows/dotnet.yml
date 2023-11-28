@@ -60,7 +60,7 @@ jobs:
       - uses: wzieba/AppCenter-Github-Action@v1
         with:
           appName: hoang-floatingcube.com/DemoCICD
-          token: ff2a971c-d058-459e-8bf9-8ab8196e0ec1
+          token: b3b62bc3a11464326a8aa638f040b888da7fb7bb
           group: Testers
           file: DemoCICD/bin/Release/DemoCICD.DemoCICD-Signed.apk
           notifyTesters: true
