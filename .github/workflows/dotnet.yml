@@ -2,7 +2,7 @@ name: Build Xamarin.Android app
 
 on: [push]
 
-# jobs:
+jobs:
 #   build:
 
 #     runs-on: macos-latest
@@ -68,7 +68,7 @@ on: [push]
   #         debug: false     
 
   # name: 'Xamarin.Android Signed Build'
-description: 'Build and Sign Xamarin.Android Project'
+# description: 'Build and Sign Xamarin.Android Project'
 # branding:
 #   icon: 'activity'
 #   color: 'white'
