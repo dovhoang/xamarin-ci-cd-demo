@@ -48,7 +48,6 @@
         <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
         <AndroidLinkMode>SdkOnly</AndroidLinkMode>
         <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
-        <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
         <AndroidDexTool>d8</AndroidDexTool>
     </PropertyGroup>
     <ItemGroup>
