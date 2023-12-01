@@ -43,6 +43,7 @@ jobs:
           signing_key_alias: hoang
           signing_key_password: 123123
           configuration: "Debug"
+          xamarin_android_version: "https://aka.ms/xamarin-android-commercial-d16-6-macos"
       - uses: actions/upload-artifact@v2
         with:
           name: release-apk
