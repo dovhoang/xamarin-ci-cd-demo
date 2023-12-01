@@ -24,7 +24,7 @@ jobs:
       #     configuration: "Debug"
       #     xamarin_android_version: "https://aka.ms/xamarin-android-commercial-d16-3-macos"
       - name: Install dependencies
-        run: nuget restore <sln_file_path>
+        run: nuget restore ${{ github.workspace }}/DemoCICD.sln
       - name: Run script file
         run: |
           pwd
