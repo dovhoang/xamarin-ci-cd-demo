@@ -48,6 +48,7 @@
         <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
         <AndroidLinkMode>SdkOnly</AndroidLinkMode>
         <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+        <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System" />
