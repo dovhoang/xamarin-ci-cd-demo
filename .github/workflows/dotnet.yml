@@ -47,21 +47,21 @@ jobs:
         with:
           name: release-apk
           path: DemoCICD/bin/Release/DemoCICD.DemoCICD-Signed.apk   
-  DeployAppCenter:
-    needs: BuildAPK
-    name: Deploy App Center
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/download-artifact@v2
-        with:
-          name: release-apk
-          path: DemoCICD/bin/Release
-      - uses: wzieba/AppCenter-Github-Action@v1
-        with:
-          appName: hoang-floatingcube.com/DemoCICD
-          token: b3b62bc3a11464326a8aa638f040b888da7fb7bb
-          group: Testers
-          file: DemoCICD/bin/Release/DemoCICD.DemoCICD-Signed.apk
-          notifyTesters: true
-          debug: false     
+  # DeployAppCenter:
+  #   needs: BuildAPK
+  #   name: Deploy App Center
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v1
+  #     - uses: actions/download-artifact@v2
+  #       with:
+  #         name: release-apk
+  #         path: DemoCICD/bin/Release
+  #     - uses: wzieba/AppCenter-Github-Action@v1
+  #       with:
+  #         appName: hoang-floatingcube.com/DemoCICD
+  #         token: b3b62bc3a11464326a8aa638f040b888da7fb7bb
+  #         group: Testers
+  #         file: DemoCICD/bin/Release/DemoCICD.DemoCICD-Signed.apk
+  #         notifyTesters: true
+  #         debug: false     
