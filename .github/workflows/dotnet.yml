@@ -1,6 +1,6 @@
-# name: Build Xamarin.Android app
+name: Build Xamarin.Android app
 
-# on: [push]
+on: [push]
 
 # jobs:
 #   build:
@@ -67,11 +67,11 @@
   #         notifyTesters: true
   #         debug: false     
 
-  name: 'Xamarin.Android Signed Build'
+  # name: 'Xamarin.Android Signed Build'
 description: 'Build and Sign Xamarin.Android Project'
-branding:
-  icon: 'activity'
-  color: 'white'
+# branding:
+#   icon: 'activity'
+#   color: 'white'
 # inputs:
 #   csproj_path:
 #     description: 'Path to csproj file'
