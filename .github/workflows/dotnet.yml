@@ -25,6 +25,8 @@ jobs:
       #     xamarin_android_version: "https://aka.ms/xamarin-android-commercial-d16-3-macos"
       - name: Run script file
         run: |
+          pwd
+          ls -la
           ./build.sh
         shell: bash
         env:
