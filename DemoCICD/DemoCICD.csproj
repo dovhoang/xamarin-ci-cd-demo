@@ -49,7 +49,7 @@
         <AndroidLinkMode>SdkOnly</AndroidLinkMode>
         <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
         <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
-        <AndroidDexTool>dx</AndroidDexTool>
+        <AndroidDexTool>d8</AndroidDexTool>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System" />
