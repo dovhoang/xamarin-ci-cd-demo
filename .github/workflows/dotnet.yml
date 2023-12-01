@@ -23,10 +23,11 @@ jobs:
       #     signing_key_password: 123123
       #     configuration: "Debug"
       #     xamarin_android_version: "https://aka.ms/xamarin-android-commercial-d16-3-macos"
-      - name: abc
+      - name: Run script file
         run: |
-          run: ${{ github.action_path }}/build.sh
-      env:
+          ${{ github.action_path }}/build.sh
+        shell: bash
+        env:
           CSPROJ_PATH: DemoCICD/DemoCICD.csproj
           SIGNING_KEY: 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
           KEY_STORE_PASSWORD: 123123
@@ -35,7 +36,6 @@ jobs:
           CONFIGURATION: Release
           MONO_VERSION: stable
           XAMARIN_ANDROID_VERSION: https://aka.ms/xamarin-android-commercial-d16-3-macos
-      shell: bash
       - uses: actions/upload-artifact@v2
         with:
           name: release-apk
@@ -92,7 +92,7 @@ jobs:
 #     description: 'Version of Xamarin.Android to use for build'
 #     required: false
 #     default: 'stable'
-runs:
-  using: "composite"
-  steps:
-    - 
+# runs:
+#   using: "composite"
+#   steps:
+#     - 
