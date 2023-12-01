@@ -23,6 +23,10 @@ jobs:
       #     signing_key_password: 123123
       #     configuration: "Debug"
       #     xamarin_android_version: "https://aka.ms/xamarin-android-commercial-d16-3-macos"
+      - name: Setup .NET Core SDK 5.0.x
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '5.0.x'
       - name: Run script file
         run: |
           pwd
